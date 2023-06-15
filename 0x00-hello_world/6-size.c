@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - A program that prints the size of a various computer types
- *Retun 0 (Success)
+ *Retun: 0 (success)
  */
 int main(void)
 {
