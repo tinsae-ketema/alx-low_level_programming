@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - A program that prints the size of a various computer types
- * Retun 0 (Success)
+ *main - A program that prints the size of a various computer types
+ *Retun 0 (Success)
  */
 int main(void)
 {
@@ -12,4 +12,3 @@ printf("Size of a long int: %lu byte(s)\n", sizeof(long long int));
 printf("Size of float: %lu byte(s)", (sizeof(float));
 return (0);
 }
-
