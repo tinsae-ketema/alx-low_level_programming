@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: print size of a cha, an int, long int, long long int and a float
+ * Description: print size of a char, an int,
+ *long int, long long int and a float
  * Return: always 0 (Success)
  */
 int main(void)
