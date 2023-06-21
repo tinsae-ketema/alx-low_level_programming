@@ -9,9 +9,9 @@
 int main(void)
 {
 	int count;
-	int fib1 = 0, fib2 = 1, sum;
-	int fib1_half1, fib1_half2, fib2_half1, fib2_half2;
-	int half1, half2;
+	long unsigned int fib1 = 0, fib2 = 1, sum;
+	long unsigned int fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+	long unsigned int half1, half2;
 
 	for (count = 0; count < 92; count++)
 	{
