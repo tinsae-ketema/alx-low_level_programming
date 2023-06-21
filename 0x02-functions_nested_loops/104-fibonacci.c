@@ -11,7 +11,7 @@ int main(void)
 	unsigned int long i;
 	unsigned int long bef = 1;
 	unsigned int long aft = 2;
-	unsigned int long l = 1000000000;
+	unsigned int long l = 10000000000;
 	unsigned int long bef1;
 	unsigned int long bef2;
 	unsigned int long aft1;
