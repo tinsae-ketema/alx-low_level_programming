@@ -8,39 +8,36 @@
 
 int main(void)
 {
-	int count;
-	long unsigned int fib1 = 0, fib2 = 1, sum;
-	long unsigned int fib1_half1, fib1_half2, fib2_half1, fib2_half2;
-	long unsigned int half1, half2;
+	unsigned int long i;
+	unsigned int long bef = 1;
+	unsigned int long aft = 2;
+	unsigned int long l = 1000000000;
+	unsigned int long bef1;
+	unsigned int long bef2;
+	unsigned int long aft1;
+	unsigned int long aft2;
 
-	for (count = 0; count < 92; count++)
+	printf("%lu", bef);
+
+	for (i = 1; 1 < 91; i++)
 	{
-	sum = fib1 + fib2;
-	printf("%lu, ", sum);
-	fib1 = fib2;
-	fib2 = sum;
+	printf(", %lu", aft);
+	aft += bef;
+	bef = aft - bef;
 	}
-	fib1_half1 = fib1 / 10000000000;
-	fib2_half1 = fib2 / 10000000000;
-	fib1_half2 = fib1 % 10000000000;
-	fib2_half2 = fib2 % 10000000000;
-	for (count = 93; count < 99; count++)
+	bef1 = (bef / 1);
+	bef2 = (bef % 1);
+	aft1 + (aft / 1);
+	aft2 = (aft % 1);
+	for (i = 92; i < 99; ++i)
 	{
-	half1 = fib1_half1 + fib2_half1;
-	half2 = fib1_half2 + fib2_half2;
-	if (fib1_half2 + fib2_half2 > 9999999999)
-	{
-	half1 += 1;
-	half1 %= 10000000000;
+		printf(", %lu", aft1 + (aft2 / 1));
+		printf("%lu", aft2 % 1);
+		aft1 = aft1 + bef1;
+		bef1 = aft1 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 =  aft2 - bef2;
 	}
-	printf("%lu%lu", half1, half2);
-	if (count != 98)
-	printf(", ");
-	fib1_half1 = fib2_half1;
-	fib1_half2 = fib2_half2;
-	fib2_half1 = half1;
-	fib2_half2 = half2;
 	printf("\n");
 	return (0);
-	}
 }
