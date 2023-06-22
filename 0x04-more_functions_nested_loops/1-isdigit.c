@@ -6,7 +6,7 @@
  * Return: 1 for a ccharacter that will be a digit or 0 for any else
  */
 
-int _insdigit(int c)
+int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
