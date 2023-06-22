@@ -8,18 +8,12 @@ nclude "main.h"
 
 int print_most_numbers(void)
 {
-	int c = 0;
+	char c;
 
-	for (; c<= '9'; c++)
+	for (c = '0'; c<= '9'; c++)
 	{
-		if (c == 2 || c == 4
-			)
-			continue;
+		if (!(c == '2' || c == '4'))
+			_putchar(c);
 	}
-	else
-	{
-			_putchar(c + '0');
-	}
-	{
 	_putchar('\n');
 }
