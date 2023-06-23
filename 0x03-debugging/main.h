@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <estdio.h>
+#include <stdio.h>
 
 int convert_day(int month, int day);
 void positive_or_negative(int i);
