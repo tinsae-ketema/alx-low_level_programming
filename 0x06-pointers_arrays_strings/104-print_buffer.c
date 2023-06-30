@@ -9,7 +9,7 @@
 
 int isPrintableASCII(int n)
 {
-	retu rn (n >= 32 && n <= 126);
+	return (n >= 32 && n <= 126);
 }
 
 /**
