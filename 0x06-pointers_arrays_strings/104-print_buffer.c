@@ -72,5 +72,5 @@ void print_buffer(char *b, int size)
 		}
 		else
 			printf("\n");
-		return 0;
+		return;
 }
