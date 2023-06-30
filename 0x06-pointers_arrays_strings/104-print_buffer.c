@@ -39,7 +39,7 @@ void printHexes(char *b, int start, int end)
  */
 void printASCII(char *b, int start, int end)
 {
-	int ch, i = 0;
+	int ch, i;
 
 	while (i < end)
 	{
@@ -59,7 +59,7 @@ void printASCII(char *b, int start, int end)
 void print_buffer(char *b, int size)
 {
 	int start, end;
-		if (size < 0)
+		if (size > 0)
 		{
 			for (start = 0; start < size; start += 10)
 			{
