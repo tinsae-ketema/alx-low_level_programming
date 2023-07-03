@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strtchr - fills memory with aa constant byte
+ * _strchr - fills memory with aa constant byte
  * @s: ppointer to put the constant
  * @c: constant
  * Return: pointer s
