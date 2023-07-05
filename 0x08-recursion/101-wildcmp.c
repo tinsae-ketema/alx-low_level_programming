@@ -30,7 +30,7 @@ int inception(char *s1, char *s2)
 	return (ret);
 }
 /**
- * wildcamp - compares teo string lexicographically
+ * wildcmp - compares teo string lexicographically
  * @s1: the first string
  * @s2: the second dtring , can contain wildcard
  * Return: 1 if identical, 0 if falase
@@ -45,7 +45,7 @@ int wildcmp(char *s1, char *s2)
 	{
 		if (!*s1)
 			return (1);
-		return (wildcmp(s1 + 1, s2 + 1));
+		return (wildcmp(s1 + 1,*s2 == '*' ? s2 : + 1));
 	}
 	if (!*s1 || !s2)
 	return (0);
