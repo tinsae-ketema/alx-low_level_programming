@@ -2,6 +2,8 @@
 #define MAIN_H
 
 int factorial(int n);
+int check(char *s, int start, int end, int mod);
+int last_index(char *s);
 int _putchar(char c);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
