@@ -2,6 +2,7 @@
 #define MAIN_H
 
 int factorial(int n);
+int _putchar(char c);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _sqrt_recursion(int n);
