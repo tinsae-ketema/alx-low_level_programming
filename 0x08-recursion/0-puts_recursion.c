@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts_recursion 
+ * _puts_recursion
  * @s: pointer to the string
  * Return: void
  */
