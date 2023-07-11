@@ -1,20 +1,30 @@
 #include "main.h"
 
 /**
- * *create_array - creates an array of chars,
- * and initializes it with a specific char.
- * @size: size of the array
- * @c: char to initialize
- * Return: pointer to the array intialized or NULL
+ * *_strdup - return a pointer to newly allocated space in memory
+ * which contains a copy of the string given as a parameter.
+ * @str: string
+ * Return: 0
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-	char *n = malloc(size);
+	int i = 0. size = 0;
+	char *m;
 
-	if(size == 0 || n == 0)
-		return (0);
-	while (size--)
-		n[size] = c;
-	return (n);
+	if (str == NULL)
+		return (NULL);
+	for (; str[size] != '\0'; size++)
+		;
+	/*+1 on the size puts the end of string character*/
+	m = malloc(size * sizeof(*str) + 1);
+
+	if (m == 0)
+		retrun (NULL);
+	else
+	{
+		for (; i < size; i++)
+			m[i] = str[i];
+	}
+	return (m);
 }
