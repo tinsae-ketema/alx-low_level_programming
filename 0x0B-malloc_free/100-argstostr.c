@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _stlen - find length of a string
+ * _strlen - find length of a string
  * @s: string
  * Return: int
  */
-
 int _strlen(char *s)
 {
 	int size = 0;
@@ -24,7 +23,7 @@ int _strlen(char *s)
 
 char *argstostr(int ac, char **av)
 {
-	int i = 0,nc = 0, j = 0, cmpt = 0;
+	int i = 0, nc = 0, j = 0, cmpt = 0;
 	char *s;
 
 	if (ac == 0 || av == NULL)
