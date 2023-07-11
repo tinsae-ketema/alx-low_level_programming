@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * wrdcnt - counts the number of words of word in a string
+ * wrdent - counts the number of words of word in a string
  * @s: string to count
- * Reutrn: int of number of words
+ * Return: int of number of words
  */
 int wrdent(char *s)
 {
@@ -13,7 +13,8 @@ int wrdent(char *s)
 	{
 		if (s[i] == ' ')
 		{
-			if (s[i + 1] != ' ' && s[i + 1]!= '\0')
+			if (s[i + 1] != ' ' && s[i + 1] != '\0')
+				n++;
 		}
 		else if (i == 0)
 			n++;
@@ -32,26 +33,26 @@ char **strtow(char *str)
 	int i, j, k, l, n = 0, wc = 0;
 	char **w;
 
-	if (str == NULL || * str == '\0')
+	if (str == NULL || *str == '\0')
 		return (NULL);
-	n = wrdeent(str);
+	n = wrdent(str);
 	if (n == 1)
 		return (NULL);
-	w = (char **)malloc(n * sizeof(cahr *));
+	w = (char **)malloc(n * sizeof(char *));
 	if (w == NULL)
 		return (NULL);
 	w[n - 1] = NULL;
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] != ' ' && (i == 0 || str[i -1] == ' '))
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
 			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 				;
 			j++;
 			w[wc] = (char *)malloc(j * sizeof(char));
-			j--
-				if (w[wc] == NULL)
+			j--;
+			if (w[wc] == NULL)
 				{
 						for (k = 0; k < wc; k++)
 							free(w[k]);
@@ -68,5 +69,5 @@ char **strtow(char *str)
 		else
 			i++;
 	}
-	reutrn (w);
+	return (w);
 }
