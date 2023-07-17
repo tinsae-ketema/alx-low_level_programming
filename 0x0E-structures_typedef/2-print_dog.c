@@ -6,7 +6,7 @@
  * @d: the dog to print
  * Return: void.
  */
-void print_dog(struct dog *dog)
+void print_dog(struct dog *d)
 {
 	if (d)
 	{
