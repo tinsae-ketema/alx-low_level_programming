@@ -4,7 +4,7 @@
 
 /**
  * _strlen - a function that gets a length of sring
- * @str: the string to get the length
+ * @s: the string to get the length
  * Return: length of @str
  */
 int _strlen(char *s)
@@ -72,7 +72,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->owner = malloc(sizeof(char) * (len2 + 1));
 	if (dog->owner == NULL)
 	{
-		free (dog);
+		free(dog);
 		free(dog->name);
 		return (NULL);
 	}
