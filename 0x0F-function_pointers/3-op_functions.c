@@ -4,7 +4,7 @@
  * op_add - adds two integers
  * @a: the first int
  * @b: the second int
- * Retun: the sum
+ * Return: the sum
  */
 int op_add(int a, int b)
 {
@@ -38,7 +38,7 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-        return (a / b);
+	return (a / b);
 }
 /**
  * op_mod - module two integers
@@ -48,5 +48,5 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-        return (a % b);
+	return (a % b);
 }
