@@ -3,7 +3,7 @@
 /**
  * print_strings - prints strings with separator
  * @separator: the string separator
- * @n...: the strings to print
+ * @n: the strings to print
  * Return: void
  */
 void print_strings(const char *separator, const unsigned int n, ...)
